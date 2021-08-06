@@ -1,0 +1,41 @@
+Question 1-->
+
+What is the time complexity T(n) for the following code snippet?
+a = 1 // 1 
+b = 1// 1
+while(b <= n) // n
+{
+    a += 1 // n-1
+    b += 1 // n-1
+    cout<<"Hi"; // n-1
+}
+
+Output-->
+T(n) = 1+1+n+(n-1)+(n-1)+(n-1)
+T(n)=O(n)=linear time complexity
+
+
+Question 2-->
+
+Write the output for the following recursive code snippet for n = 3:
+#include <iostream>
+using namespace std;
+//if n=3
+void fun(int n)
+{
+    if(n > 0)
+    {
+        cout<<n;
+        fun(n - 1);
+        cout<<n;
+    }
+}
+int main()
+{
+    fun(3);
+    return 0;
+}
+Output-->
+Calling fun function with argument 3,then check if condition 3 > 0 is true, print 3 then again call fun function now argument is 2 , check 2 > 0 is true ,print 2, now again call fun function with argument 1, now 1 > 0 so print 1,now print 1 then 2 and last print 3
+ 
+321123
